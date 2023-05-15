@@ -16,9 +16,3 @@ module.exports = {
     await queryInterface.bulkDelete('usuarios', null, {});
   }
 };
-
-/**
- up serve para colocar os dados no banco de dados 
-
- down serve p/ pegar os dados que vc colocou no banco de dados e apaga tudo
- */

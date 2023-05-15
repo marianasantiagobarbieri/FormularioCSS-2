@@ -14,12 +14,25 @@ input{
 .cadastroo{
     text-decoration: none;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 50;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    width: 30%;
+}
+
+a{
+    border: 2px solid lightblue;
+    text-decoration: none;
+    padding: 15px 10px;
+    
+}
+
+a:hover{
+    background: linear-gradient(120deg, #e75590, #00c2cb);
+    color: #FFF;
 }
 
 article div{
-    padding: 50px;
+    padding: 30px;
 }
 
 .inputs{

@@ -42,6 +42,19 @@ app.post('/pessoas/adicionar', async function(req, res){
 })
 
 
+app.get('/pessoas/deletar', async function(req, res){
+  try {
+      await pessoa.destroy({ where: { id: req.query.id } });
+      res.redirect('/pessoas')
+  } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Ocorreu um erro ao criar a pessoa.' });
+  }
+})
+
+
+
+
 app.listen(3000, function() {
   console.log('App de Exemplo escutando na porta 3000!')
 });
