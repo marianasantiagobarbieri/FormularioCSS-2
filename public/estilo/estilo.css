@@ -1,6 +1,7 @@
 .formulario{
     display: flex;
     flex-direction: column;
+    
 }
 
 input{
@@ -17,17 +18,32 @@ input{
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     width: 30%;
+    border-color: #00c2cb;
+}
+
+
+.bodyy{
+    border-color: #00c2cb;
+}
+
+.enviar{
+    margin-bottom: 30px;
+}
+
+.titulo{
+    padding: 40px 0px 0px 30px;
 }
 
 a{
-    border: 2px solid lightblue;
     text-decoration: none;
     padding: 15px 10px;
+    color: #FFF;
+    background: linear-gradient(120deg, #e75590, #00c2cb);
     
 }
 
 a:hover{
-    background: linear-gradient(120deg, #e75590, #00c2cb);
+    background: #e75590;
     color: #FFF;
 }
 
@@ -37,9 +53,5 @@ article div{
 
 .inputs{
     width: 30%;
-    height: 30px;
-    border-left: whitesmoke ;
-    border-top: whitesmoke ;
-    border-right: whitesmoke ;
     text-decoration: none;
 }

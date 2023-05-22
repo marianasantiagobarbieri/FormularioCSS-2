@@ -14,12 +14,14 @@
 
     <body class="bodyy">
 
-        <a href="/pessoas/criar">Cadastrar algo</a>
+        <h2 class="titulo">Usuários cadastrados</h2>
         <div class="cadastroo">
             <% pessoas.forEach((pessoa)=> { %>
-                <div>
+                <div >
+                    
                     <%= pessoa.nome %>
-                </div>  
+                </div> 
+
                 <div>
                     <%= pessoa.sobrenome %>
                 </div>
@@ -30,7 +32,8 @@
                 <a href="/pessoas/deletar?id=<%=pessoa.id%>">Deletar</a>
               
                 <% }) %> 
-        
+                
+                <a href="/pessoas/criar">Cadastrar algo</a>
             </div> 
 </article>
 </body>

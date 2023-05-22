@@ -26,12 +26,8 @@ app.get('/pessoas/criar', async function(req, res){
 //criei uma rota chamada chamada pessoas, diferente do outro que se chama usuarios
 // pessoas/criar, o pessoas ´o nome da minha pasta e que esse código está, e  o criar é o nome do arquivo em que esse código está
 
+
 app.post('/pessoas/criar', async function(req, res){
-  console.log(req.body)
-})
-
-
-app.post('/pessoas/adicionar', async function(req, res){
   try {
       await pessoa.create(req.body);
       res.redirect('/pessoas')
